@@ -11,8 +11,8 @@ export default {
   name: 'SiteHeader',
   data() {
     return {
-      title: 'Vue Example'
+      title: 'Vue Example',
     }
-  }
+  },
 }
 </script>

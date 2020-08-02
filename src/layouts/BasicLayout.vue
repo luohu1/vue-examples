@@ -24,7 +24,7 @@ import SiteFooter from './components/SiteFooter'
 
 export default {
   name: 'BasicLayout',
-  components: { SiteHeader, Sidebar, SiteFooter }
+  components: { SiteHeader, Sidebar, SiteFooter },
 }
 </script>
 

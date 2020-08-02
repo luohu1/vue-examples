@@ -5,7 +5,7 @@ import store from './store'
 import {
   Layout,
   Menu,
-  Icon
+  Icon,
 } from 'ant-design-vue'
 
 Vue.use(Layout)
@@ -17,5 +17,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')
