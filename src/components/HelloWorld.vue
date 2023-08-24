@@ -1,14 +1,7 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <h1>{{ msg }}</h1>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
-}
+<script setup lang="ts">
+defineProps<{ msg: string }>()
 </script>
