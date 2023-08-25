@@ -1,11 +1,15 @@
-import { createRouter, createWebHistory } from "vue-router";
-import type { RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
+
+// import BlankLayout from '~/layouts/BlankLayout.vue'
+import HomeLayout from '~/layouts/HomeLayout.vue';
 
 const routes: RouteRecordRaw[] = [
   {
-    path: "/",
-    name: 'home',
-    component: () => import('~/views/Home.vue')
+    path: '/',
+    component: HomeLayout,
+    redirect: '/home',
+    children: [{ path: '/home', name: 'home', component: () => import('~/pages/Home.vue') }],
   },
 ];
 
